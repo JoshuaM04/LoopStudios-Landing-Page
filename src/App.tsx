@@ -2,9 +2,9 @@ import hamburgerIcon from "./assets/images/icon-hamburger.svg";
 
 export default function App() {
   return (
-    <div className="[ parent-container ] [ flex flex-col justify-between items-center ] [ text-center ] [ p-[20px] ] [ min-h-screen ]">
-      <header className="[ grid grid-cols-1 ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-contain bg-no-repeat ] [ m-[-20px] ] [ min-h-[650px] ]">
-        <div className="[ flex flex-row items-center justify-between ] [ m-[20px] mb-[-20px] ] [ h-min ]">
+    <div className="[ parent-container ] [ flex flex-col justify-between items-center ] [ text-center ] [ p-[0_20px_20px_20px] ] [ min-h-screen w-screen ]">
+      <header className="[ grid ] [ p-5 ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ]">
+        <div className="[ flex flex-row items-center justify-between ] [ h-min ]">
           <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
           <button className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-indigo-500 ]" aria-label="drop-down menu"><img src={hamburgerIcon} /></button>
 
@@ -19,7 +19,7 @@ export default function App() {
           </nav>
         </div>
 
-        <h1 className="[ uppercase text-3xl text-left text-slate-300 ] [ border-2 border-slate-300 ] [ p-2 ml-[20px] mr-[20px] ] [ h-[128px] w-[335px] ]">Immersive experiences that deliver</h1>
+        <h1 className="self-start [ uppercase text-3xl text-left text-slate-300 tracking-wider ] [ p-5 ] [ border-2 border-slate-300 ]">Immersive experiences that deliver</h1>
       </header>
 
       <main className="w-xs">

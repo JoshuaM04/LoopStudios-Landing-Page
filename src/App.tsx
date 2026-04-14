@@ -1,6 +1,5 @@
 import hamburgerIcon from "./assets/images/icon-hamburger.svg";
 import interactiveImg from "./assets/images/mobile/image-interactive.jpg";
-import { useState } from 'react';
 
 export default function App() {
   const boxes = ["DEEP EARTH", "NIGHT ARCADE", "SOCCER TEAM VR", "THE GRID", "FROM UP ABOVE VR", "POCKET BOREALIS", "THE CURIOSITY", "MAKE IT FISHEYE"];
@@ -9,7 +8,7 @@ export default function App() {
   let count = -1;
 
   return (
-    <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_20px_20px] ] [ min-h-screen w-screen ]">
+    <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_0_20px] ] [ min-h-screen w-screen ]">
       <header className="[ grid ] [ p-5 ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ]">
         <section className="[ flex flex-row items-center justify-between ] [ h-min ]">
           <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
@@ -43,7 +42,7 @@ export default function App() {
           </p>
         </section>
 
-        <section className="flex flex-col gap-10">
+        <section className="flex flex-col gap-10 items-center">
           <h2 className="text-3xl tracking-wider font-light uppercase">Our creations</h2>
 
           <div className="grid grid-rows-8 gap-5">
@@ -51,7 +50,7 @@ export default function App() {
               boxes.map((item, index) => {
                 count++;
                 return (
-                  <section key={index} className={`${bgImage[count]} bg-center bg-cover bg-no-repeat text-white text-xl text-bottom font-light min-h-[150px] p-5 relative`}>
+                  <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-[150px] w-80 ] [ relative ]`}>
                     <h3 className="absolute bottom-5">{item}</h3>
                   </section>
                 )
@@ -59,16 +58,15 @@ export default function App() {
             }
           </div>
 
+          <button className="uppercase tracking-wider border-2 w-30 p-1">See all</button>
         </section>
-
-        <button className="uppercase">See all</button>
       </main>
 
-      <footer>
-        <h3>loopstudios</h3>
+      <footer className="flex flex-col gap-10 justify-between bg-black text-white text-xs relative bottom-0 w-screen p-10">
+        <h3 className="text-2xl font-semibold">loopstudios</h3>
 
         <nav>
-          <ul>
+          <ul className="flex flex-col gap-5">
             <li>About</li>
             <li>Careers</li>
             <li>Events</li>
@@ -77,7 +75,7 @@ export default function App() {
           </ul>
         </nav>
 
-        <p>© 2021 Loopstudios. All rights reserved.</p>
+        <p className="text-gray-500">© 2021 Loopstudios. All rights reserved.</p>
       </footer>
     </div>
   )

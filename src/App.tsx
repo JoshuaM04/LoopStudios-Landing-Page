@@ -1,7 +1,13 @@
 import hamburgerIcon from "./assets/images/icon-hamburger.svg";
 import interactiveImg from "./assets/images/mobile/image-interactive.jpg";
+import { useState } from 'react';
 
 export default function App() {
+  const boxes = ["DEEP EARTH", "NIGHT ARCADE", "SOCCER TEAM VR", "THE GRID", "FROM UP ABOVE VR", "POCKET BOREALIS", "THE CURIOSITY", "MAKE IT FISHEYE"];
+  const bgImage = ["bg-[url(assets/images/mobile/image-deep-earth.jpg)]", "bg-[url(assets/images/mobile/image-night-arcade.jpg)]", "bg-[url(assets/images/mobile/image-soccer-team.jpg)]", "bg-[url(assets/images/mobile/image-grid.jpg)]", 
+                  "bg-[url(assets/images/mobile/image-from-above.jpg)]", "bg-[url(assets/images/mobile/image-pocket-borealis.jpg)]", "bg-[url(assets/images/mobile/image-curiosity.jpg)]", "bg-[url(assets/images/mobile/image-fisheye.jpg)]"];
+  let count = -1;
+
   return (
     <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_20px_20px] ] [ min-h-screen w-screen ]">
       <header className="[ grid ] [ p-5 ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ]">
@@ -37,18 +43,24 @@ export default function App() {
           </p>
         </section>
 
-        <h2 className="text-3xl tracking-wider font-light uppercase">Our creations</h2>
+        <section className="flex flex-col gap-10">
+          <h2 className="text-3xl tracking-wider font-light uppercase">Our creations</h2>
 
-        <div hidden={true} aria-hidden="true">
-          Deep earth
-          Night arcade
-          Soccer team VR
-          The grid
-          From up above VR
-          Pocket borealis
-          The curiosity
-          Make it fisheye
-        </div>
+          <div className="grid grid-rows-8 gap-5">
+            {
+              boxes.map((item, index) => {
+                count++;
+                return (
+                  <section key={index} className={`${bgImage[count]} bg-center bg-cover bg-no-repeat text-white text-xl text-bottom font-light min-h-[150px] p-5 relative`}>
+                    <h3 className="absolute bottom-5">{item}</h3>
+                  </section>
+                )
+              })
+            }
+          </div>
+
+        </section>
+
         <button className="uppercase">See all</button>
       </main>
 

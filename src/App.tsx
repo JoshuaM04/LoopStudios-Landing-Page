@@ -49,12 +49,12 @@ export default function App() {
         <section className="flex flex-col gap-10 items-center">
           <h2 className="text-3xl tracking-wider font-light uppercase">Our creations</h2>
 
-          <div className="grid grid-rows-8 gap-5">
+          <div className="grid grid-rows-8 gap-5 w-full">
             {
               boxes.map((item, index) => {
                 count++;
                 return (
-                  <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-[150px] w-80 ] [ relative ]`}>
+                  <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-30 ] [ relative ]`}>
                     <h3 className="absolute bottom-5">{item}</h3>
                   </section>
                 )

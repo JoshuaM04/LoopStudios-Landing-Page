@@ -1,5 +1,9 @@
 import hamburgerIcon from "./assets/images/icon-hamburger.svg";
 import interactiveImg from "./assets/images/mobile/image-interactive.jpg";
+import facebookIcon from "./assets/images/icon-facebook.svg";
+import twitterIcon from "./assets/images/icon-twitter.svg";
+import pinterestIcon from "./assets/images/icon-pinterest.svg";
+import instagramIcon from "./assets/images/icon-instagram.svg";
 
 export default function App() {
   const boxes = ["DEEP EARTH", "NIGHT ARCADE", "SOCCER TEAM VR", "THE GRID", "FROM UP ABOVE VR", "POCKET BOREALIS", "THE CURIOSITY", "MAKE IT FISHEYE"];
@@ -75,6 +79,13 @@ export default function App() {
           </ul>
         </nav>
 
+        <section className="flex justify-center gap-5">
+          <button aria-label="Facebook link"><img src={facebookIcon} aria-hidden="true" /></button>
+          <button aria-label="Twitter link"><img src={twitterIcon} aria-hidden="true" /></button>
+          <button aria-label="Pinterest link"><img src={pinterestIcon} aria-hidden="true" /></button>
+          <button aria-label="Instagram link"><img src={instagramIcon}  aria-hidden="true"/></button>
+        </section>
+        
         <p className="text-gray-500">© 2021 Loopstudios. All rights reserved.</p>
       </footer>
     </div>

@@ -11,7 +11,7 @@ interface MobileHeaderProps {
   activeMenu: boolean;
 } 
 
-function MobileHeader(activeHeader: boolean, activeMenu: boolean) {
+function MobileHeader({ activeHeader, activeMenu}: MobileHeaderProps) {
   console.log("Active Header: " + activeHeader);
 
   return (
@@ -36,7 +36,7 @@ function MobileHeader(activeHeader: boolean, activeMenu: boolean) {
   );
 } 
 
-export default function App(prop: MobileHeaderProps) {
+export default function App() {
   const boxes = ["DEEP EARTH", "NIGHT ARCADE", "SOCCER TEAM VR", "THE GRID", "FROM UP ABOVE VR", "POCKET BOREALIS", "THE CURIOSITY", "MAKE IT FISHEYE"];
   const bgImage = ["bg-[url(assets/images/mobile/image-deep-earth.jpg)]", "bg-[url(assets/images/mobile/image-night-arcade.jpg)]", "bg-[url(assets/images/mobile/image-soccer-team.jpg)]", "bg-[url(assets/images/mobile/image-grid.jpg)]", 
                   "bg-[url(assets/images/mobile/image-from-above.jpg)]", "bg-[url(assets/images/mobile/image-pocket-borealis.jpg)]", "bg-[url(assets/images/mobile/image-curiosity.jpg)]", "bg-[url(assets/images/mobile/image-fisheye.jpg)]"];
@@ -48,8 +48,8 @@ export default function App(prop: MobileHeaderProps) {
     <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_0_20px] ] [ min-h-screen w-screen ]">
 
       <MobileHeader 
-        activeHeader={prop.activeHeader}
-        activeMenu={prop.activeMenu}
+        activeHeader={activeHeader}
+        activeMenu={activeMenu}
       />
 
       <main className="flex flex-col gap-20">

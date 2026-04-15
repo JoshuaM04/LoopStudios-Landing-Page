@@ -10,11 +10,11 @@ export default function Footer() {
 
             <nav>
                 <ul className="flex flex-col gap-5">
-                <li>About</li>
-                <li>Careers</li>
-                <li>Events</li>
-                <li>Products</li>
-                <li>Support</li>
+                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">About</li>
+                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Careers</li>
+                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Events</li>
+                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Products</li>
+                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Support</li>
                 </ul>
             </nav>
 

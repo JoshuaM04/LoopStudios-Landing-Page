@@ -4,7 +4,7 @@ import facebookIcon from "./assets/images/icon-facebook.svg";
 import twitterIcon from "./assets/images/icon-twitter.svg";
 import pinterestIcon from "./assets/images/icon-pinterest.svg";
 import instagramIcon from "./assets/images/icon-instagram.svg";
-import { useState } from 'react';
+// import { useState } from 'react';
 
 /* interface MobileHeader {
   activeHeader: boolean;

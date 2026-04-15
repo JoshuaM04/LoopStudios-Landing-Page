@@ -43,7 +43,10 @@ export default function App() {
   const [activeHeader, setActiveHeader] = useState(true);
   const [activeMenu, setActiveMenu] = useState(false);
   let count = -1;
-
+  
+  setActiveHeader(true);
+  setActiveMenu(false);
+  
   return (
     <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_0_20px] ] [ min-h-screen w-screen ]">
 

@@ -1,9 +1,11 @@
 import hamburgerIcon from "../assets/images/icon-hamburger.svg"
 import { useState } from 'react';
 
-function handleMenu(setisHeaderHidden: Function, setIsMenuHidden: Function) {
-    setisHeaderHidden(false);
-    setIsMenuHidden(true);
+function handleMenu(setisHeaderHidden: Function, setIsMenuHidden: Function, isHeaderHidden: boolean, isMenuHidden: boolean) {
+    if (isHeaderHidden === false && isMenuHidden === true) {
+        setisHeaderHidden(true);
+        setIsMenuHidden(false);
+    } 
 }
 
 export function MobileHeader() {
@@ -14,7 +16,7 @@ export function MobileHeader() {
         <header className="[ grid ] [ p-5 ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ]">
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
                 <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
-                <button onClick={() => handleMenu(setisHeaderHidden, setIsMenuHidden)} className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-indigo-500 ]" aria-label="drop-down menu"><img src={hamburgerIcon} /></button>
+                <button onClick={() => handleMenu(setisHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-indigo-500 ]" aria-label="drop-down menu"><img src={hamburgerIcon} /></button>
             </section>
 
             <nav hidden={isMenuHidden} aria-hidden={isMenuHidden}>

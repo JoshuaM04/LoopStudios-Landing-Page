@@ -34,13 +34,13 @@ export function MobileHeader() {
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} aria-label="close-menu"><img src={closeIcon} aria-hidden="true" /></button>
                 </div>
 
-                <nav className="text-3xl/15 text-left font-light uppercase">
+                <nav className="text-3xl/15 text-left font-light uppercase select-none">
                     <ul>
-                        <li>About</li>
-                        <li>Careers</li>
-                        <li>Events</li>
-                        <li>Products</li>
-                        <li>Support</li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 active:scale-101"><button>About</button></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 active:scale-101"><button>Careers</button></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 active:scale-101"><button>Events</button></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 active:scale-101"><button>Products</button></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 active:scale-101"><button>Support</button></li>
                     </ul>
                 </nav>
             </section>

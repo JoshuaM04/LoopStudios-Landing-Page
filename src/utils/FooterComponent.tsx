@@ -5,16 +5,16 @@ import instagramIcon from "../assets/images/icon-instagram.svg";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col gap-10 justify-between bg-black text-white text-xs relative bottom-0 w-screen p-10">
+        <footer className="flex flex-col gap-10 justify-between bg-black text-white text-xs relative bottom-0 w-screen p-10 select-none">
             <h3 className="text-2xl font-semibold">loopstudios</h3>
 
             <nav>
                 <ul className="flex flex-col gap-5">
-                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">About</li>
-                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Careers</li>
-                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Events</li>
-                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Products</li>
-                    <li className="hover:text-purple-500 hover:font-bold transition delay-50 duration-150 ease-in-out hover:scale-150 active:scale-150">Support</li>
+                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">About</li>
+                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Careers</li>
+                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Events</li>
+                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Products</li>
+                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Support</li>
                 </ul>
             </nav>
 

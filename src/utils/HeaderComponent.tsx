@@ -21,7 +21,7 @@ export function MobileHeader() {
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
                 <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
-                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-black ] [ transition delay-150 duration-300 ease-in-out hover-translate-y-1 hover:scale-110]" aria-label="drop-down menu">
+                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-black ] [ transition delay-150 duration-300 ease-in-out hover-translate-y-1 hover:scale-110] select-none" aria-label="drop-down menu">
                     <img src={hamburgerIcon} aria-hidden="true" />
                 </button>
             </section>
@@ -31,7 +31,7 @@ export function MobileHeader() {
             <section className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white" hidden={isMenuHidden} aria-hidden={isMenuHidden}>
                 <div className="flex justify-between self-start">
                     <p className="text-2xl font-bold">loopstudios</p>
-                    <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} aria-label="close-menu"><img src={closeIcon} aria-hidden="true" /></button>
+                    <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} className="select-none" aria-label="close-menu"><img src={closeIcon} aria-hidden="true" /></button>
                 </div>
 
                 <nav className="text-3xl/15 text-left font-light uppercase select-none">

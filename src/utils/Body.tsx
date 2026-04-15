@@ -29,7 +29,7 @@ export default function Body() {
                     boxes.map((item, index) => {
                     count++;
                     return (
-                        <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-30 ] [ relative ]`}>
+                        <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ transition delay-150 duration-300 ease-in-out hover:scale-105 focus:scale-105 ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-30 ] [ relative ]`}>
                         <h3 className="absolute bottom-5">{item}</h3>
                         </section>
                     )

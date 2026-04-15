@@ -18,17 +18,20 @@ export function MobileHeader() {
 
     return (
         <header className="[ grid ] [ p-[20px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ]">
-            <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
+            <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className={`[ flex flex-row items-center justify-between ] [ h-min ] transition-all transition-discrete ${isHeaderHidden ? 'opacity-0' : 'block'}`}>
                 <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
-                <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-indigo-500 ]" aria-label="drop-down menu"><img src={hamburgerIcon} /></button>
+                <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
+                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer hover:bg-black ] [ transition delay-150 duration-300 ease-in-out hover-translate-y-1 hover:scale-110]" aria-label="drop-down menu">
+                    <img src={hamburgerIcon} aria-hidden="true" />
+                </button>
             </section>
 
             <h1 hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ]">Immersive experiences that deliver</h1>
 
-            <section className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white" hidden={isMenuHidden} aria-hidden={isMenuHidden}>
+            <section className={`grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white transition-all transition-discrete ${isMenuHidden ? 'opacity-0' : 'block'}`} hidden={isMenuHidden} aria-hidden={isMenuHidden}>
                 <div className="flex justify-between self-start">
                     <p className="text-2xl font-bold">loopstudios</p>
-                    <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} aria-label="close-menu"><img src={closeIcon} /></button>
+                    <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} aria-label="close-menu"><img src={closeIcon} aria-hidden="true" /></button>
                 </div>
 
                 <nav className="text-3xl/15 text-left font-light uppercase">

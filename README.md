@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Vercel](https://loop-studios-landing-page-tawny.vercel.app/)
+- Live Site URL: [Vercel](https://loop-studios-landing-page-kohl.vercel.app/)
 
 ## My process
 

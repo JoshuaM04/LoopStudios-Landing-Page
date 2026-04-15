@@ -37,7 +37,7 @@ export default function Body() {
                 }
                 </div>
 
-                <button className="uppercase tracking-wider border-2 w-30 p-1 transition delay-150 duration-300 ease-in-out hover:scale-115">See all</button>
+                <button className="uppercase tracking-wider border-2 w-30 p-1 transition delay-150 duration-300 ease-in-out hover:scale-115 select-none">See all</button>
             </section>
         </main>
     )

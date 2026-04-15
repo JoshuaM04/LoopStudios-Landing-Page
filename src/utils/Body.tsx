@@ -1,11 +1,9 @@
 import interactiveImg from "../assets/images/mobile/image-interactive.jpg";
 
-interface BodyProps {
-  boxes: Array<String>;
-  bgImage: Array<String>;
-} 
-
-export default function Body({ boxes, bgImage}: BodyProps) {
+export default function Body() {
+    const boxes = ["DEEP EARTH", "NIGHT ARCADE", "SOCCER TEAM VR", "THE GRID", "FROM UP ABOVE VR", "POCKET BOREALIS", "THE CURIOSITY", "MAKE IT FISHEYE"];
+    const bgImage = ["bg-[url(assets/images/mobile/image-deep-earth.jpg)]", "bg-[url(assets/images/mobile/image-night-arcade.jpg)]", "bg-[url(assets/images/mobile/image-soccer-team.jpg)]", "bg-[url(assets/images/mobile/image-grid.jpg)]", 
+                  "bg-[url(assets/images/mobile/image-from-above.jpg)]", "bg-[url(assets/images/mobile/image-pocket-borealis.jpg)]", "bg-[url(assets/images/mobile/image-curiosity.jpg)]", "bg-[url(assets/images/mobile/image-fisheye.jpg)]"];
     let count = -1;
     
     return (

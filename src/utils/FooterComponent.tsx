@@ -10,11 +10,11 @@ export default function Footer() {
 
             <nav>
                 <ul className="flex flex-col gap-5">
-                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">About</li>
-                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Careers</li>
-                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Events</li>
-                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Products</li>
-                    <li className="hover:text-purple-500 hover:font-bold hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:font-bold active:scale-150">Support</li>
+                    <li className="hover:text-purple-500 hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150">About</li>
+                    <li className="hover:text-purple-500 hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150">Careers</li>
+                    <li className="hover:text-purple-500 hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150">Events</li>
+                    <li className="hover:text-purple-500 hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150">Products</li>
+                    <li className="hover:text-purple-500 hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150">Support</li>
                 </ul>
             </nav>
 

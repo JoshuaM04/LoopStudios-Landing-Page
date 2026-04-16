@@ -4,7 +4,7 @@ import Footer from "./utils/FooterComponent.tsx";
 
 export default function App() {
   return (
-    <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_0_20px] ] [ min-h-screen w-screen ]">
+    <div className="[ parent-container ] [ flex flex-col justify-between items-center gap-20 ] [ text-center ] [ p-[0_20px_0_20px] ] [ min-h-screen max-w-screen box-border]">
       <MobileHeader />
       <BodyComponent />
       <Footer />

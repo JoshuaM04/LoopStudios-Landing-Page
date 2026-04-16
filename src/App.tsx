@@ -1,6 +1,6 @@
-import { MobileHeader } from "./utils/HeaderComponent.tsx";
-import BodyComponent  from "./utils/Body.tsx";
-import Footer from "./utils/FooterComponent.tsx";
+import { MobileHeader } from "./components/Header.tsx";
+import BodyComponent  from "./components/Body.tsx";
+import Footer from "./components/Footer.tsx";
 
 export default function App() {
   return (

@@ -19,10 +19,10 @@ export default function Footer() {
             </nav>
 
             <section className="flex justify-center gap-5">
-                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Facebook link"><img src={facebookIcon} aria-hidden="true" /></button>
-                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Twitter link"><img src={twitterIcon} aria-hidden="true" /></button>
-                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Pinterest link"><img src={pinterestIcon} aria-hidden="true" /></button>
-                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Instagram link"><img src={instagramIcon}  aria-hidden="true"/></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Facebook link"><a href="https://www.facebook.com/" target="_blank"><img src={facebookIcon} aria-hidden="true" /></a></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Twitter link"><a href="https://x.com/home" target="_blank"><img src={twitterIcon} aria-hidden="true" /></a></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Pinterest link"><a href="https://www.pinterest.com/" target="_blank"><img src={pinterestIcon} aria-hidden="true" /></a></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Instagram link"><a href="https://www.instagram.com/" target="_blank"><img src={instagramIcon}  aria-hidden="true"/></a></button>
             </section>
             
             <p className="text-gray-500">© 2021 Loopstudios. All rights reserved.</p>

@@ -1,6 +1,6 @@
 import hamburgerIcon from "../assets/images/icon-hamburger.svg"
 import closeIcon from "../assets/images/icon-close.svg";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function handleMenu(setIsHeaderHidden: Function, setIsMenuHidden: Function, isHeaderHidden: boolean, isMenuHidden: boolean) {
     if (isHeaderHidden === false && isMenuHidden === true) {
@@ -15,6 +15,22 @@ function handleMenu(setIsHeaderHidden: Function, setIsMenuHidden: Function, isHe
 export function MobileHeader() {
     const [isHeaderHidden, setIsHeaderHidden] = useState(false);
     const [isMenuHidden, setIsMenuHidden] = useState(true);
+    const [heading, setHeading] = useState("");
+    const headingVal = "Immersive experiences that deliver";
+    let index = 0;
+    const speed = 400;
+
+    useEffect(() => {
+        typeWriter();
+
+        function typeWriter() {
+            if (index < headingVal.length) {
+                setHeading(headingVal.substring(0, index + 1));
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    }, [])
 
     return (
         <header className="[ grid ] [ p-[20px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ] select-none">
@@ -26,7 +42,9 @@ export function MobileHeader() {
                 </button>
             </section>
 
-            <h1 hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ]">Immersive experiences that deliver</h1>
+            <h1 className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ]" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+                {heading}
+            </h1>
 
             <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
                 <div className="flex justify-between self-start">

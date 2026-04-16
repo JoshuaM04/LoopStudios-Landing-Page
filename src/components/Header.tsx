@@ -35,14 +35,14 @@ export function MobileHeader() {
     return (
         <header className="[ grid ] [ p-[20px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ] select-none">
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
-                <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
+                <p className="[ text-3xl text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
                     className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ]" aria-label="drop-down menu" aria-controls="HeaderMenu">
                     <img src={hamburgerIcon} className="pointer-events-none" aria-hidden="true" />
                 </button>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ] [ min-h-[85px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-5xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 

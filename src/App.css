@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-alata: Alata, sans-serif;
+    --font-josefinSans: Josefin Sans, sans-serif;
     --animate-fade-in-textBox: fade-in 4s;
     --animate-fade-in-dropDownMenu: fade-in .5s ease-in;
     --animate-fade-out-dropDownMenu: fade-out .5s ease-out;

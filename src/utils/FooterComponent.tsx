@@ -19,10 +19,10 @@ export default function Footer() {
             </nav>
 
             <section className="flex justify-center gap-5">
-                <button aria-label="Facebook link"><img src={facebookIcon} aria-hidden="true" /></button>
-                <button aria-label="Twitter link"><img src={twitterIcon} aria-hidden="true" /></button>
-                <button aria-label="Pinterest link"><img src={pinterestIcon} aria-hidden="true" /></button>
-                <button aria-label="Instagram link"><img src={instagramIcon}  aria-hidden="true"/></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Facebook link"><img src={facebookIcon} aria-hidden="true" /></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Twitter link"><img src={twitterIcon} aria-hidden="true" /></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Pinterest link"><img src={pinterestIcon} aria-hidden="true" /></button>
+                <button className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Instagram link"><img src={instagramIcon}  aria-hidden="true"/></button>
             </section>
             
             <p className="text-gray-500">© 2021 Loopstudios. All rights reserved.</p>

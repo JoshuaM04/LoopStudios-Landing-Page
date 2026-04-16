@@ -18,7 +18,7 @@ export function MobileHeader() {
     const [heading, setHeading] = useState("");
     const headingVal = "Immersive experiences that deliver";
     let index = 0;
-    const speed = 100;
+    const speed = 200;
 
     useEffect(() => {
         setTimeout(typeWriter, 1000);
@@ -42,11 +42,11 @@ export function MobileHeader() {
                 </button>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ] [ min-h-[85px] ]" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ] [ min-h-[85px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 
-            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
+            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white animate-fade-in-dropDownMenu" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
                 <div className="flex justify-between self-start">
                     <p className="text-2xl font-bold">loopstudios</p>
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 

@@ -3,6 +3,9 @@
 
 @theme {
     --font-alata: Alata, sans-serif;
+    --animate-fade-in-textBox: fade-in 4s;
+    --animate-fade-in-dropDownMenu: fade-in .5s ease-in;
+    --animate-fade-out-dropDownMenu: fade-out .5s ease-out;
     --animate-fade-in-about: fade-in 2s ease-in;
     --animate-fade-in-careers: fade-in 3s ease-in;
     --animate-fade-in-events: fade-in 4s ease-in;
@@ -15,6 +18,15 @@
         }
         100% {
             opacity: 1;
+        }
+    }
+
+    @keyframes fade-out {
+        100% {
+            opacity: 1;
+        }
+        0% {
+            opacity: 0;
         }
     }
 }

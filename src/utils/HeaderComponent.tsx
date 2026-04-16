@@ -21,7 +21,7 @@ export function MobileHeader() {
     const speed = 100;
 
     useEffect(() => {
-        setTimeout(typeWriter, 2000);
+        setTimeout(typeWriter, 1000);
 
         function typeWriter() {
             if (index < headingVal.length) {
@@ -42,7 +42,7 @@ export function MobileHeader() {
                 </button>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ]" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ] [ min-h-[85px] ]" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 

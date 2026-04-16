@@ -57,11 +57,11 @@ export function MobileHeader() {
 
                 <nav className="text-3xl/15 text-left font-light uppercase select-none">
                     <ul>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">About</a></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Careers</a></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Events</a></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Products</a></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Support</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500 animate-fade-in-about"><a href="#">About</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500 animate-fade-in-careers"><a href="#">Careers</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500 animate-fade-in-events"><a href="#">Events</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500 animate-fade-in-products"><a href="#">Products</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500 animate-fade-in-support"><a href="#">Support</a></li>
                     </ul>
                 </nav>
             </section>

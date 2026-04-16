@@ -50,7 +50,7 @@ export function MobileHeader() {
                 </section>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] md:w-[700px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 

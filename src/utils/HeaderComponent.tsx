@@ -18,8 +18,9 @@ export function MobileHeader() {
     const [heading, setHeading] = useState("");
     const headingVal = "Immersive experiences that deliver";
     let index = 0;
-    const speed = 400;
+    const speed = 500;
 
+    // Any way to make this slower without chunks of text being rendered at each interval rather than a single character?
     useEffect(() => {
         typeWriter();
 

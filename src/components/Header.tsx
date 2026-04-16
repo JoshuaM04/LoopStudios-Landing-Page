@@ -41,7 +41,7 @@ export function MobileHeader() {
                     <img src={hamburgerIcon} className="pointer-events-none" aria-hidden="true" />
                 </button>
 
-                <section className="text-white sm:hidden md:inline-flex gap-10">
+                <section className="text-white max-md:hidden md:inline-flex gap-10">
                     <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">About</a>
                     <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Careers</a>
                     <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Events</a>
@@ -50,7 +50,7 @@ export function MobileHeader() {
                 </section>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] md:w-[600px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 

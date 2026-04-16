@@ -21,7 +21,7 @@ export function MobileHeader() {
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
                 <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
-                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 ]" aria-label="drop-down menu" aria-controls="HeaderMenu">
+                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ]" aria-label="drop-down menu" aria-controls="HeaderMenu">
                     <img src={hamburgerIcon} aria-hidden="true" />
                 </button>
             </section>
@@ -32,7 +32,7 @@ export function MobileHeader() {
                 <div className="flex justify-between self-start">
                     <p className="text-2xl font-bold">loopstudios</p>
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
-                            className="hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120" aria-label="close-menu">
+                            className="hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120" aria-label="close-menu">
                         <img src={closeIcon} aria-hidden="true" aria-controls="HeaderMenu"/>
                     </button>
                 </div>

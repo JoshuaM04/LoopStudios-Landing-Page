@@ -28,7 +28,7 @@ export function MobileHeader() {
 
             <h1 hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ self-start ] [ uppercase text-4xl text-left text-slate-300 tracking-wider font-light ] [ p-5 ] [ border-2 border-slate-300 ]">Immersive experiences that deliver</h1>
 
-            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={isMenuHidden}>
+            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
                 <div className="flex justify-between self-start">
                     <p className="text-2xl font-bold">loopstudios</p>
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} aria-label="close-menu"><img src={closeIcon} aria-hidden="true" aria-controls="HeaderMenu"/></button>

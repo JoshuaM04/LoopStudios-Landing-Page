@@ -18,7 +18,7 @@ export function MobileHeader() {
     const [heading, setHeading] = useState("");
     const headingVal = "Immersive experiences that deliver";
     let index = 0;
-    const speed = 200;
+    const speed = 100;
 
     useEffect(() => {
         setTimeout(typeWriter, 1000);

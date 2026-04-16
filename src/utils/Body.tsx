@@ -29,7 +29,7 @@ export default function Body() {
                     boxes.map((item, index) => {
                     count++;
                     return (
-                        <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ transition delay-150 duration-300 ease-in-out hover:scale-105 active:scale-105 ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-30 ] [ relative ]`}>
+                        <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ transition delay-150 duration-300 ease-in-out hover:scale-105 active:scale-105 hover:cursor-pointer ] [ ${bgImage[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-30 ] [ relative ]`}>
                         <h3 className="absolute bottom-5 select-none">{item}</h3>
                         </section>
                     )
@@ -37,7 +37,7 @@ export default function Body() {
                 }
                 </div>
 
-                <button className="uppercase tracking-wider border-2 w-30 p-1 transition delay-150 duration-300 ease-in-out hover:scale-115 active:scale-115 select-none">See all</button>
+                <button className="uppercase tracking-wider border-2 w-30 p-1 transition delay-150 duration-300 ease-in-out hover:scale-115 active:scale-115 select-none hover:cursor-pointer">See all</button>
             </section>
         </main>
     )

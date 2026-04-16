@@ -22,7 +22,7 @@ export function MobileHeader() {
                 <p className="[ text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
                     className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ]" aria-label="drop-down menu" aria-controls="HeaderMenu">
-                    <img src={hamburgerIcon} aria-hidden="true" />
+                    <img src={hamburgerIcon} className="pointer-events-none" aria-hidden="true" />
                 </button>
             </section>
 
@@ -33,17 +33,17 @@ export function MobileHeader() {
                     <p className="text-2xl font-bold">loopstudios</p>
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
                             className="hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120" aria-label="close-menu">
-                        <img src={closeIcon} aria-hidden="true" aria-controls="HeaderMenu"/>
+                        <img src={closeIcon} className="pointer-events-none" aria-hidden="true" aria-controls="HeaderMenu"/>
                     </button>
                 </div>
 
                 <nav className="text-3xl/15 text-left font-light uppercase select-none">
                     <ul>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><button>About</button></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><button>Careers</button></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><button>Events</button></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><button>Products</button></li>
-                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><button>Support</button></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">About</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Careers</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Events</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Products</a></li>
+                        <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500"><a href="#">Support</a></li>
                     </ul>
                 </nav>
             </section>

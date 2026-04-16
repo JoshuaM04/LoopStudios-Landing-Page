@@ -21,7 +21,7 @@ export function MobileHeader() {
     const speed = 100;
 
     useEffect(() => {
-        typeWriter();
+        setTimeout(typeWriter, 2000);
 
         function typeWriter() {
             if (index < headingVal.length) {

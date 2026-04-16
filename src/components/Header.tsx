@@ -33,7 +33,7 @@ export function MobileHeader() {
     }, [])
 
     return (
-        <header className="[ grid ] [ p-[20px] md:p-[40px_100px_40px_100px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ] select-none">
+        <header className="[ grid ] [ p-[20px] md:p-[40px_100px_40px_100px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] select-none">
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
                 <p className="[ text-3xl text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 

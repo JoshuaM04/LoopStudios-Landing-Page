@@ -33,16 +33,24 @@ export function MobileHeader() {
     }, [])
 
     return (
-        <header className="[ grid ] [ p-[20px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ] select-none">
+        <header className="[ grid ] [ p-[20px] md:p-[40px_100px_40px_100px] ] [ min-h-[650px] w-screen ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat ] select-none">
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
                 <p className="[ text-3xl text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
-                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ]" aria-label="drop-down menu" aria-controls="HeaderMenu">
+                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ] md:hidden" aria-label="drop-down menu" aria-controls="HeaderMenu">
                     <img src={hamburgerIcon} className="pointer-events-none" aria-hidden="true" />
                 </button>
+
+                <section className="text-white sm:hidden md:inline-flex gap-10">
+                    <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">About</a>
+                    <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Careers</a>
+                    <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Events</a>
+                    <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Products</a>
+                    <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Support</a>
+                </section>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-5xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-[85px] md:w-[700px] ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 

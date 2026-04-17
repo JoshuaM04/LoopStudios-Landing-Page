@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="flex flex-col gap-10">
                 <h3 className="text-2xl font-semibold md:text-left">loopstudios</h3>
                 <nav>
-                    <ul className="flex flex-col gap-5 md:flex-row">
+                    <ul className="flex flex-col gap-5 md:flex-row 2xl:text-lg">
                         <li className="max-md:hover:text-purple-500 max-md:hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150 md:hover:border-b"><a href="#">About</a></li>
                         <li className="max-md:hover:text-purple-500 max-md:hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150 md:hover:border-b"><a href="#">Careers</a></li>
                         <li className="max-md:hover:text-purple-500 max-md:hover:scale-150 transition delay-50 duration-150 ease-in-out active:text-purple-500 active:scale-150 md:hover:border-b"><a href="#">Event</a>s</li>
@@ -46,7 +46,7 @@ export default function Footer() {
                     </button>
                 </section>
                 
-                <p className="text-gray-500 md:place-self-end">© 2021 Loopstudios. All rights reserved.</p>
+                <p className="text-gray-500 md:place-self-end 2xl:text-lg">© 2021 Loopstudios. All rights reserved.</p>
             </div>
         </footer>
     )

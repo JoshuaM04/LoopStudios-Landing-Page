@@ -24,7 +24,7 @@ export default function Body() {
                 </div>
             </section>
 
-            <section className="grid grid-cols-1 gap-10">
+            <section className="grid grid-cols-1 gap-10 md:min-w-[800px] md:place-self-center">
                 <div className="flex justify-center md:justify-between">
                     <h2 className="text-3xl tracking-wider font-light uppercase md:place-self-start">Our creations</h2>
                     <button className="uppercase tracking-wider border-2 w-30 p-1 transition delay-150 duration-300 ease-in-out hover:scale-115 active:scale-115 select-none hover:cursor-pointer place-self-center max-md:hidden max-md:aria-hidden">See all</button>

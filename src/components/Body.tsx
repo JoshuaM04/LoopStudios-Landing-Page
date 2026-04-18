@@ -41,7 +41,7 @@ export default function Body() {
                                 <h3 className="absolute bottom-5 select-none">{item}</h3>
                             </section>
                             <section key={index} 
-                                     className={`[ text-white text-xl text-bottom font-light ] [ transition delay-150 duration-300 ease-in-out hover:scale-102 hover:grayscale active:scale-105 hover:cursor-pointer ] [ ${bgImageDesktop[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-80 2xl:min-h-150 ] [ relative ] max-md:hidden max-md:aria-hidden`}>
+                                     className={`[ text-white text-xl text-bottom font-light ] [ transition delay-150 duration-300 ease-in-out hover:scale-102 hover:grayscale active:grayscale active:scale-105 hover:cursor-pointer ] [ ${bgImageDesktop[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-80 2xl:min-h-150 ] [ relative ] max-md:hidden max-md:aria-hidden`}>
                                 <h3 className="absolute bottom-10 2xl:text-3xl select-none">{item}</h3>
                             </section>
                         </div>   

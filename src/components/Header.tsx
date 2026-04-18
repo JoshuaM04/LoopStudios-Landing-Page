@@ -54,7 +54,7 @@ export function MobileHeader() {
                 {heading}
             </h1>
 
-            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] p-5 bg-black text-white animate-fade-in-dropDownMenu" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
+            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] md:m-[-40px_-100px_-40px_-100px] p-10 bg-black text-white animate-fade-in-dropDownMenu" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
                 <div className="flex justify-between self-start">
                     <p className="text-3xl font-bold">loopstudios</p>
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 

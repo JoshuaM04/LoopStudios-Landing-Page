@@ -33,7 +33,7 @@ export function MobileHeader() {
     }, [])
 
     return (
-        <header className="[ grid ] [ p-5 md:p-[40px_100px_40px_100px] ] [ min-h-162.5 w-screen 2xl:min-h-350 ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] select-none">
+        <header className="[ grid ] [ p-5 md:p-[40px_50px_40px_50px] ] [ min-h-162.5 w-screen 2xl:min-h-350 ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] select-none">
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
                 <p className="[ text-3xl 2xl:text-5xl text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
@@ -54,7 +54,7 @@ export function MobileHeader() {
                 {heading}
             </h1>
 
-            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] md:m-[-40px_-100px_-40px_-100px] p-10 bg-black text-white animate-fade-in-dropDownMenu" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
+            <section id="HeaderMenu" className="grid grid-cols 1 auto-rows-min gap-35 m-[-20px] md:m-[-40px_-50px_-40px_-50px] md:p-[40px_50px_40px_50px] p-10 bg-black text-white animate-fade-in-dropDownMenu" hidden={isMenuHidden} aria-hidden={isMenuHidden} aria-expanded={!(isMenuHidden)}>
                 <div className="flex justify-between self-start">
                     <p className="text-3xl font-bold">loopstudios</p>
                     <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 

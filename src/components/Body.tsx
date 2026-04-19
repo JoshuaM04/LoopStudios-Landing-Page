@@ -9,7 +9,7 @@ export default function Body() {
     let count = -1;
     
     return (
-        <main className="grid grid-cols-1 gap-20 w-full md:gap-50">
+        <main className="grid grid-cols-1 gap-20 w-full md:gap-50 p-[0_20px_0_20px]">
             <section className="flex flex-col gap-5 items-center md:items-start w-full md:relative md:max-w-200 md:place-self-center xl:min-w-350">
                 <img src={interactiveImg} alt="A man in a blue t-shirt wearing a VR-headset and is in a T-Rex like posture with his arms." className="md:h-90 md:w-130 xl:h-130 xl:w-200" />
 

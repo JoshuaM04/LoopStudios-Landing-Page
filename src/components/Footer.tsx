@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="flex flex-col gap-10 bg-black text-white text-xs relative bottom-0 w-screen p-10 select-none md:flex-row md:justify-between">
+        <footer className="flex flex-col gap-10 bg-black text-white text-xs relative bottom-0 w-full p-10 select-none md:flex-row md:justify-between">
             <div className="flex flex-col gap-10">
                 <h3 className="text-2xl font-semibold md:text-left">loopstudios</h3>
                 <nav>

@@ -33,15 +33,15 @@ export function MobileHeader() {
     }, [])
 
     return (
-        <header className="[ grid ] [ p-5 md:p-[40px_50px_40px_50px] ] [ min-h-162.5 w-screen 2xl:min-h-350 ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] select-none">
+        <header className="[ grid ] [ p-5 md:p-[40px_50px_40px_50px] ] [ min-h-162.5 w-screen xl:min-h-350 ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] select-none">
             <section hidden={isHeaderHidden} aria-hidden={isHeaderHidden} className="[ flex flex-row items-center justify-between ] [ h-min ]">
-                <p className="[ text-3xl 2xl:text-5xl text-white text-left ] [ font-medium ]">loopstudios</p>
+                <p className="[ text-3xl xl:text-5xl text-white text-left ] [ font-medium ]">loopstudios</p>
                 <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} 
-                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ] 2xl:hidden" aria-label="drop-down menu" aria-controls="HeaderMenu">
+                    className="[ rounded-sm p-1 ] [ hover:cursor-pointer transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ] xl:hidden" aria-label="drop-down menu" aria-controls="HeaderMenu">
                     <img src={hamburgerIcon} className="pointer-events-none" aria-hidden="true" />
                 </button>
 
-                <section className="text-white max-2xl:hidden 2xl:inline-flex gap-10 2xl:text-xl">
+                <section className="text-white max-xl:hidden xl:inline-flex gap-10 xl:text-xl">
                     <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">About</a>
                     <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Careers</a>
                     <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Events</a>
@@ -50,7 +50,7 @@ export function MobileHeader() {
                 </section>
             </section>
 
-            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl 2xl:text-9xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-21.25 md:w-150 2xl:w-300 2xl:min-h-45 ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+            <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl xl:text-9xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-21.25 md:w-150 xl:w-300 xl:min-h-45 ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 {heading}
             </h1>
 

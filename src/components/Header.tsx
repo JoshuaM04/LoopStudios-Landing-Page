@@ -16,7 +16,7 @@ interface DesktopProps {
 
 function MobileHeader({isHeaderHidden, setIsHeaderHidden, isMenuHidden, setIsMenuHidden, heading}: MobileProps) {
     return (
-        <div className="xl:hidden min-h-full">
+        <div className="[ xl:hidden xl:aria-hidden ] [ min-h-full ]">
             <section id="DefaultHeader" className="grid grid-cols-1 gap-50" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                 <div className="flex items-center justify-between">
                     <p className="[ text-3xl text-white text-left ] [ font-medium ]">loopstudios</p>
@@ -55,7 +55,7 @@ function MobileHeader({isHeaderHidden, setIsHeaderHidden, isMenuHidden, setIsMen
 
 function DesktopHeader({heading}: DesktopProps) {
     return (
-        <div className="max-xl:hidden">
+        <div className="[ max-xl:hidden max-xl:aria-hidden ]">
             <section className="grid grid-cols-1 gap-100">
                 <div className="flex flex-row items-center justify-between">
                     <p className="text-5xl text-white text-left font-medium">loopstudios</p>
@@ -108,7 +108,7 @@ export default function Header() {
     }, [])
 
     return (
-        <header className="p-5 m-[0_-20px_0_-20px] md:p-[40px_50px_40px_50px] ] [ h-162.5 w-full xl:min-h-dvh ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] select-none">
+        <header className="[ p-5 m-[0_-20px_0_-20px] md:p-[40px_50px_40px_50px] ] [ h-162.5 w-full xl:min-h-dvh ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] [ select-none ]">
             <MobileHeader 
                 isHeaderHidden={isHeaderHidden}
                 setIsHeaderHidden={setIsHeaderHidden}

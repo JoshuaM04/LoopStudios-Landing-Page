@@ -26,7 +26,7 @@ function MobileHeader({isHeaderHidden, setIsHeaderHidden, isMenuHidden, setIsMen
                     </button>
                 </div>
 
-                <h1 className="[ self-start ] [ uppercase text-5xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-23 ] [ md:w-150 md:text-7xl ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
+                <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-23 ] [ md:w-150 md:text-7xl ] animate-fade-in-textBox" hidden={isHeaderHidden} aria-hidden={isHeaderHidden}>
                     {heading}
                 </h1>
             </section>
@@ -58,18 +58,18 @@ function DesktopHeader({heading}: DesktopProps) {
         <div className="max-xl:hidden">
             <section className="grid grid-cols-1 gap-100">
                 <div className="flex flex-row items-center justify-between">
-                    <p className="[ xl:text-5xl text-white text-left ] [ font-medium ]">loopstudios</p>
+                    <p className="text-5xl text-white text-left font-medium">loopstudios</p>
 
-                    <nav className="text-white inline-flex gap-10 text-xl">
-                        <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">About</a>
-                        <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Careers</a>
-                        <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Events</a>
-                        <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Products</a>
-                        <a href="#" className="transition delay-50 duration-150 ease-in-out hover:scale-120 hover:border-b active:scale-120 active:border-b">Support</a>
+                    <nav className="[ text-white text-xl ] [ inline-flex gap-10 ]">
+                        <a href="#" className="hover:border-b active:border-b">About</a>
+                        <a href="#" className="hover:border-b active:border-b">Careers</a>
+                        <a href="#" className="hover:border-b active:border-b">Events</a>
+                        <a href="#" className="hover:border-b active:border-b">Products</a>
+                        <a href="#" className="hover:border-b active:border-b">Support</a>
                     </nav>
                 </div>
 
-                <h1 className="[ self-start ] [ uppercase text-5xl md:text-7xl xl:text-9xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ min-h-21.25 md:w-150 xl:w-300 xl:min-h-45 ] animate-fade-in-textBox place-self-start">
+                <h1 className="[ place-self-start ] [ uppercase text-9xl text-left text-white tracking-widest font-light ] [ p-5 ] [ border-2 border-white ] [ w-242 min-h-45 ] [ animate-fade-in-textBox ]">
                     {heading}
                 </h1>
             </section>

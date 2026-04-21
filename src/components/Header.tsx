@@ -21,7 +21,7 @@ function MobileHeader({isHeaderHidden, setIsHeaderHidden, isMenuHidden, setIsMen
                 <div className="flex items-center justify-between">
                     <p className="[ text-3xl text-white text-left ] [ font-medium ]">loopstudios</p>
                     
-                    <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} className="[ rounded-sm ] [ p-1 ] [ hover:cursor-pointer ] [ transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ]" aria-label="drop-down menu" aria-controls="HeaderMenu">
+                    <button onClick={() => handleMenu(setIsHeaderHidden, setIsMenuHidden, isHeaderHidden, isMenuHidden)} className="[ rounded-sm ] [ p-1 ] [ hover:cursor-pointer ] [ transition delay-50 duration-150 ease-in-out hover:scale-120 active:scale-120 ]" aria-haspopup="menu" aria-label="drop-down menu" aria-controls="HeaderMenu">
                         <img src={hamburgerIcon} className="pointer-events-none" aria-hidden="true" />
                     </button>
                 </div>

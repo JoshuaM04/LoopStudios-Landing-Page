@@ -29,6 +29,7 @@ Users should be able to:
 
 ### Mobile Layout
 ![](./src/assets//MobileSolution.png)
+![](./src/assets/MobileSolutionActive.png)
 
 ### Desktop Layout
 ![](./src/assets/DesktopSolution.png)

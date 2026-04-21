@@ -60,7 +60,7 @@ function MobileLayout({boxes, bgImageMobile, bgImageDesktop, count}: LayoutProps
 
 function DesktopLayout({boxes, bgImageDesktop, count}: LayoutProps) {
     return (
-        <div className="[ max-xl:hidden max-xl:aria-hidden ] [ grid grid-cols-1 gap-50 ] [ p-[0_20px_0_20px] ] [ w-full ]">
+        <div className="[ max-xl:hidden max-xl:aria-hidden ] [ grid grid-cols-1 gap-150 ] [ p-[0_20px_0_20px] ] [ w-full ]">
             <section className="[ flex flex-col gap-5 items-start place-self-center ] [ relative ] [ w-350 ]">
                 <img src={interactiveImg} alt="A man in a blue t-shirt wearing a VR-headset and is in a T-Rex like posture with his arms." className="h-130 w-200" />
 
@@ -75,7 +75,7 @@ function DesktopLayout({boxes, bgImageDesktop, count}: LayoutProps) {
                 </div>
             </section>
 
-            <section className="[ grid grid-cols-1 gap-10 place-self-center ] [ min-w-350 ]">
+            <section className="[ grid grid-cols-1 gap-10 place-self-center ] [ min-w-300 ]">
                 <div className="flex justify-between">
                     <h2 className="[ text-5xl tracking-wider font-light uppercase ] [ place-self-start ]">Our creations</h2>
                     <button className="[ text-xl uppercase tracking-wider ] [ place-self-center ] [ border-2 ] [ p-3 ] [ w-50 ] [ transition delay-150 duration-300 ease-in-out hover:scale-115 active:scale-115 select-none hover:cursor-pointer ]">See all</button>
@@ -88,7 +88,7 @@ function DesktopLayout({boxes, bgImageDesktop, count}: LayoutProps) {
 
                         return (
                             <div>
-                                <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImageDesktop[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-150 ] [ relative ] [ transition delay-150 duration-300 ease-in-out hover:scale-102 hover:grayscale active:grayscale active:scale-105 hover:cursor-pointer ]`}>
+                                <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImageDesktop[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-125 ] [ relative ] [ transition delay-150 duration-300 ease-in-out hover:scale-102 hover:grayscale active:grayscale active:scale-105 hover:cursor-pointer ]`}>
                                     <h3 className="[ text-3xl ] [ absolute bottom-10 ] [ select-none ]">{item}</h3>
                                 </section>
                             </div>   

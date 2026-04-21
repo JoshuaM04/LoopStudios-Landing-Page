@@ -108,7 +108,7 @@ export default function Body() {
     let count = -1;
     
     return (
-        <main className="grid grid-cols-1 gap-20 w-full md:gap-50 p-[0_20px_0_20px] snap-start scroll-ml-6 shrink-0">
+        <main className="grid grid-cols-1 gap-20 w-full md:gap-50 p-[0_20px_0_20px] snap-start scroll-mt-6 shrink-0">
             <MobileLayout 
                 boxes={boxes}
                 bgImageMobile={bgImageMobile}

@@ -108,7 +108,7 @@ export default function Header() {
     }, [])
 
     return (
-        <header className="[ p-5 m-[0_-20px_0_-20px] md:p-[40px_50px_40px_50px] ] [ h-162.5 w-full xl:min-h-dvh ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] [ select-none ]">
+        <header className="[ p-5 m-[0_-20px_0_-20px] md:p-[40px_50px_40px_50px] ] [ h-162.5 w-full xl:min-h-dvh ] [ bg-[url(assets/images/mobile/image-hero.jpg)] bg-center bg-cover bg-no-repeat md:bg-[url(assets/images/desktop/image-hero.jpg)] ] [ select-none ] snap-x">
             <MobileHeader 
                 isHeaderHidden={isHeaderHidden}
                 setIsHeaderHidden={setIsHeaderHidden}

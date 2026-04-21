@@ -25,12 +25,12 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+## Screenshots
 
-## Mobile Layout
+### Mobile Layout
 ![](./src/assets//MobileSolution.png)
 
-## Desktop Layout
+### Desktop Layout
 ![](./src/assets/DesktopSolution.png)
 
 ### Links

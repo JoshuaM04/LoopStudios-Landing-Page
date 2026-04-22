@@ -89,7 +89,7 @@ function DesktopLayout({boxes, bgImageDesktop, count}: LayoutProps) {
                         return (
                             <div>
                                 <section key={index} className={`[ text-white text-xl text-bottom font-light ] [ ${bgImageDesktop[count]} bg-center bg-cover bg-no-repeat ] [ p-5 ] [ min-h-125 ] [ relative ] [ transition delay-150 duration-300 ease-in-out hover:scale-102 hover:grayscale active:grayscale active:scale-105 hover:cursor-pointer ]`}>
-                                    <h3 className="[ text-3xl ] [ absolute bottom-10 ] [ select-none ]">{item}</h3>
+                                    <p className="[ text-3xl ] [ absolute bottom-10 ] [ select-none ]">{item}</p>
                                 </section>
                             </div>   
                         )

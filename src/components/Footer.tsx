@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
 
             <div className="grid grid-rows-2 gap-10">
-                <section className="flex justify-center gap-5">
+                <section className="flex justify-center items-center gap-5">
                     
                     <a href="https://www.facebook.com/" className="hover:scale-120 active:scale-120 transition delay-50 ease-in-out" aria-label="Facebook link">
                         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" className="fill-white hover:fill-blue-400 hover:bg-white active:fill-blue-400 active:bg-white rounded-xs">

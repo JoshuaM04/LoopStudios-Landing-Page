@@ -38,7 +38,6 @@ function MobileHeader({isHeaderHidden, setIsHeaderHidden, isMenuHidden, setIsMen
                         <img src={closeIcon} className="pointer-events-none" aria-hidden="true" aria-controls="HeaderMenu"/>
                     </button>
                 </div>
-
                 <nav className="[ text-3xl/15 text-left font-light uppercase ] [ select-none ]">
                     <ul>
                         <li className="transition delay-50 duration-150 ease-in-out hover:scale-102 hover:text-purple-500 active:scale-102 active:text-purple-500 animate-fade-in-about"><a href="#">About</a></li>
